@@ -1,0 +1,19 @@
+[package]
+name = "kashshaf"
+version = "0.1.0"
+edition = "2021"
+description = "Defensive binary analyzer: plain-language explanations and visual trace dashboard."
+
+[[bin]]
+name = "kashshaf"
+path = "src/main.rs"
+
+[lib]
+path = "src/lib.rs"
+
+# Zero dependencies: standard library only.
+
+[profile.release]
+opt-level = 2
+
+[workspace]
